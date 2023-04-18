@@ -195,7 +195,7 @@ join user u on rc.user_id = u.id;
 
 ### 操作
 
-   1. 用户权限控制：创建用户，授权用户
+1. 用户权限控制：创建用户，授权用户
 
     创建用户：
 
@@ -209,13 +209,13 @@ join user u on rc.user_id = u.id;
     GRANT SELECT, INSERT, UPDATE, DELETE ON database_name.table_name TO 'username'@'localhost';
     ```
 
-   2. 数据备份：使用 mysqldump 命令进行备份
+2. 数据备份：使用 mysqldump 命令进行备份
 
     ```
     mysqldump -u username -p database_name > backup_file.sql
     ```
 
-   3. 数据库加密：使用数据库加密工具进行加密
+3. 数据库加密：使用数据库加密工具进行加密
 
     例如使用 MySQL Enterprise Transparent Data Encryption 进行加密：
 
@@ -223,7 +223,7 @@ join user u on rc.user_id = u.id;
     ALTER TABLE table_name ENCRYPTED=YES, ENCRYPTION_KEY_ID=1;
     ```
 
-   4. 数据库审计：开启 MySQL 的审计日志功能
+4. 数据库审计：开启 MySQL 的审计日志功能
 
     开启审计日志：
 
@@ -233,7 +233,7 @@ join user u on rc.user_id = u.id;
     SET GLOBAL audit_log_policy = ALL;
     ```
 
-   5. 防止拒绝服务攻击：限制连接数、限制每个连接的资源使用量
+5. 防止拒绝服务攻击：限制连接数、限制每个连接的资源使用量
 
     限制连接数：
 
